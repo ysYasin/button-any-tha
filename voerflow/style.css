@@ -1,0 +1,98 @@
+body {
+    overflow-x: hidden;
+}
+
+.kichuekta {
+    width: 400px;
+    height: 500px;
+    border: 5px solid gold;
+    border-radius: 0 0 200px 30px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.kuchvi p {
+    padding: 20px;
+    font-size: 20px;
+    background: #000;
+    color: #fff;
+    margin: 20px auto;
+    /* text-align: center; */
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    overflow-x: hidden;
+
+
+}
+
+::-webkit-scrollbar-track {
+    width: 8px;
+    background-color: rgb(133, 58, 5);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border: 2px solid transparent;
+    background-clip: content-box;
+    border-radius: 100px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+    border: 2px solid transparent;
+    background-clip: content-box;
+    border-radius: 100px;
+    transition: all .3s;
+
+}
+
+.v {
+    z-index: 2;
+    position: relative;
+    text-decoration: none;
+}
+
+#tultip {
+    padding: 20px;
+    background: rosybrown;
+    position: relative;
+    top: 43px;
+    border-radius: 14px;
+    z-index: 20;
+    color: #fff;
+    left: -69px;
+    font-weight: 700;
+    visibility: hidden;
+    text-decoration: none;
+}
+
+.v:hover #tultip {
+    visibility: visible;
+}
+
+.v:hover .sml {
+    visibility: visible;
+}
+
+.sml {
+    width: 15px;
+    height: 19px;
+    border-radius: 665px 0px 587px 0px;
+    rotate: 327deg;
+    position: absolute;
+    background: red;
+    display: inline-block;
+    top: 18px;
+    left: 67px;
+    z-index: 10;
+    visibility: hidden;
+}

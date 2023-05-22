@@ -1,0 +1,64 @@
+.main-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-gap: 10px 20px;
+    grid-template-areas:
+        "asid box2 box2 box3"
+        "asid box4 box5 box7"
+        "asid box8 box9 box7"
+
+    ;
+
+
+}
+
+.box {
+    background: #f65a00;
+    padding: 30px;
+
+}
+
+.box:nth-child(odd) {
+    background: #67290675;
+}
+
+.box:nth-child(1) {
+    grid-area: asid;
+    background: #07e4eb;
+}
+
+.box:nth-child(2) {
+    grid-area: box2;
+    background: #ff630975;
+}
+
+.box:nth-child(3) {
+    background: #e1189a75;
+    grid-area: box3;
+}
+
+.box:nth-child(4) {
+    grid-area: box4;
+    background: #0de08575;
+}
+
+.box:nth-child(5) {
+    grid-area: box5;
+    background: #67290675;
+}
+
+.box:nth-child(6) {
+    grid-area: box7;
+    background: #39a84875;
+}
+
+.box:nth-child(7) {
+    grid-area: box8;
+    background: #e8996b75;
+}
+
+.box:nth-child(8) {
+    grid-area: box9;
+    background: #3c0cc075;
+}

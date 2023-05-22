@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Montserrat&family=Oswald&family=Pangolin&family=Vina+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+:root {
+    --width: 100vw;
+    --height: 100vh
+}
+
+.ancor {
+    width: var(--width);
+    height: calc(var(--height) - 10vh);
+    background: #0f0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ancor a {
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 600;
+    padding: 15px 30px;
+    font-family: 'Pangolin', cursive;
+    color: #00aeff;
+    border: 3px solid #00aeff;
+    position: relative;
+    overflow: hidden;
+    background: #073837;
+
+}
+
+.wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 96px;
+    visibility: hidden;
+    background: #00aeff;
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
+    z-index: -1;
+
+
+}
+
+.ancor a:hover .wrap {
+    transform: translateY(-103%);
+    visibility: visible;
+    position: absolute;
+}
+
+.ancor a:hover {
+    color: #ffffff;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.wrap::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-image: url(../icon/linkedin-in.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    top: 20px;
+    animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0% {
+        left: -10%;
+        z-index: 0;
+    }
+
+    100% {
+        left: 100%;
+        z-index: 0;
+    }
+}
